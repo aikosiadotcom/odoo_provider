@@ -1,10 +1,10 @@
 class ColumnDefinition {
-  final String fieldName;
+  final String name;
   final Type type;
   final bool required;
 
   const ColumnDefinition(
-      {required this.fieldName, required this.type, this.required = false});
+      {required this.name, required this.type, this.required = false});
 }
 
 class OdooModel {
