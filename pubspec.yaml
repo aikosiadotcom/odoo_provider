@@ -13,6 +13,8 @@ dependencies:
     sdk: flutter
   yao_odoo_service: 
     path: ../odoo
+  yao_core: 
+    path: ../yao_core
 
 dev_dependencies:
   flutter_test:

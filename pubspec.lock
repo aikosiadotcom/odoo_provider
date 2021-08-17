@@ -192,7 +192,7 @@ packages:
     source: hosted
     version: "2.1.0"
   yao_core:
-    dependency: transitive
+    dependency: "direct main"
     description:
       path: "../yao_core"
       relative: true

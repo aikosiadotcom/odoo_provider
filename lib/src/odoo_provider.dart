@@ -1,3 +1,4 @@
+import 'package:yao_core/yao_core.dart';
 import 'package:yao_odoo_service/yao_odoo_service.dart';
 
 abstract class IOdooModel<T> {
@@ -9,6 +10,20 @@ abstract class IOdooModel<T> {
       bool Function(MapEntry<String, dynamic>) validate);
   Map<String, dynamic> toJsonWithoutNullAndId();
   List<String> getColumns();
+}
+
+class YaoOdooProviderService<C extends IDatabaseOperation> extends YaoService {
+  late final C adapter;
+
+  OdooProvider create<T extends IOdooModel>(T model) {
+    return OdooProvider<T, C>(adapter: this.adapter, model: model);
+  }
+
+  @override
+  Future run() async {
+    this.adapter = app.find<YaoOdooService>() as C;
+    return this;
+  }
 }
 
 class OdooProvider<T extends IOdooModel, C extends IDatabaseOperation> {
