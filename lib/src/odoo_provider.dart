@@ -1,4 +1,4 @@
-import 'package:odoo/odoo.dart';
+import 'package:yao_odoo_service/yao_odoo_service.dart';
 
 abstract class IOdooModel<T> {
   Map<String, dynamic> toJson();

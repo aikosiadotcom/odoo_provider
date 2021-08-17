@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:odoo/odoo.dart';
-import 'package:odoo_provider/odoo_provider.dart';
+import 'package:yao_odoo_service/yao_odoo_service.dart';
+import 'package:yao_odoo_provider_service/yao_odoo_provider_service.dart';
 
 void main() {
   test('provider ...', () async {

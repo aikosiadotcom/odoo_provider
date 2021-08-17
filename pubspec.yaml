@@ -1,6 +1,6 @@
-name: odoo_provider
+name: yao_odoo_provider_service
 description: describe how to create an odoo provider to perform database operation (insert, update, delete, read, query, etc) on model
-version: 0.0.3
+version: 0.0.3+1
 homepage: https://aikosia.com
 github: https://github.com/aikosiadotcom/odoo_provider
 
@@ -11,7 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  odoo: ^0.0.2
+  yao_odoo_service: 
+    path: ../odoo
 
 dev_dependencies:
   flutter_test:
