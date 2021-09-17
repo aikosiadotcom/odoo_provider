@@ -1,16 +1,6 @@
 import 'package:yao_core/yao_core.dart';
+import 'package:yao_core_builder/yao_core_builder.dart';
 import 'package:yao_odoo_service/yao_odoo_service.dart';
-
-abstract class IOdooModel<T> {
-  Map<String, dynamic> toJson();
-  T fromJson(Map<String, dynamic> json);
-  int? getId();
-  String getTableName();
-  Map<String, dynamic> toJsonWithReduce(
-      bool Function(MapEntry<String, dynamic>) validate);
-  Map<String, dynamic> toJsonWithoutNullAndId();
-  List<String> getColumns();
-}
 
 class YaoOdooProviderService<C extends IDatabaseOperation> extends YaoService {
   late final C adapter;
