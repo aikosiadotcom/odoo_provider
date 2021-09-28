@@ -11,12 +11,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  yao_odoo_service: 
-    path: ../odoo
+  yao_odoo_service:
+    git:
+      url: git://github.com/aikosiadotcom/odoo.git
+      ref: yao_odoo_service
   yao_core: 
-    path: ../yao_core
+    git:
+      url: git://github.com/aikosiadotcom/yao_core.git
+      ref: master
   yao_core_builder:
-    path: ../yao_core_builder
+    git:
+      url: git://github.com/aikosiadotcom/yao_core_builder.git
+      ref: master
     
 dev_dependencies:
   flutter_test:
