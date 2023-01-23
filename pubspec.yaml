@@ -13,15 +13,15 @@ dependencies:
     sdk: flutter
   yao_odoo_service:
     git:
-      url: git://github.com/aikosiadotcom/odoo.git
+      url: https://github.com/aikosiadotcom/odoo.git
       ref: yao_odoo_service
   yao_core: 
     git:
-      url: git://github.com/aikosiadotcom/yao_core.git
+      url: https://github.com/aikosiadotcom/yao_core.git
       ref: master
   yao_core_builder:
     git:
-      url: git://github.com/aikosiadotcom/yao_core_builder.git
+      url: https://github.com/aikosiadotcom/yao_core_builder.git
       ref: master
     
 dev_dependencies:
