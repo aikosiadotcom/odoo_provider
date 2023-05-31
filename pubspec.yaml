@@ -22,7 +22,7 @@ dependencies:
   yao_core_builder:
     git:
       url: https://github.com/aikosiadotcom/yao_core_builder.git
-      ref: material3
+      ref: master
     
 dev_dependencies:
   flutter_test:
