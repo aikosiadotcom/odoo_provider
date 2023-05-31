@@ -18,11 +18,11 @@ dependencies:
   yao_core: 
     git:
       url: https://github.com/aikosiadotcom/yao_core.git
-      ref: master
+      ref: material3
   yao_core_builder:
     git:
       url: https://github.com/aikosiadotcom/yao_core_builder.git
-      ref: master
+      ref: material3
     
 dev_dependencies:
   flutter_test:
